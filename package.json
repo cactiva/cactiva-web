@@ -23,7 +23,8 @@
   "workspaces": [
     "packages/common",
     "packages/landing",
-    "packages/reusecore"
+    "packages/reusecore",
+    "packages/api"
   ],
   "scripts": {
     "clean": "lerna clean --yes && rimraf node_modules",

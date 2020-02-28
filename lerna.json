@@ -1,5 +1,10 @@
 {
-  "packages": ["packages/common", "packages/landing", "packages/reusecore"],
+  "packages": [
+    "packages/common",
+    "packages/landing",
+    "packages/reusecore",
+    "packages/api"
+  ],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true

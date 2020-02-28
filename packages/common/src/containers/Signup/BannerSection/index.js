@@ -1,65 +1,69 @@
-import PropTypes from "prop-types";
-import "rc-tabs/assets/index.css";
-import React, { Fragment } from "react";
-import Button from "reusecore/src/elements/Button";
-import Container from "../../../components/UI/Container";
-import LoginModal from "../LoginModal";
-import Particles from "../Particle";
-import BannerWrapper, { BannerObject } from "./bannerSection.style";
-import Image from "reusecore/src/elements/Image";
+import { observer } from 'mobx-react-lite';
+import PropTypes from 'prop-types';
+import 'rc-tabs/assets/index.css';
+import React, { Fragment } from 'react';
+import Button from 'reusecore/src/elements/Button';
+import Image from 'reusecore/src/elements/Image';
+import BannerObject1 from '../../../assets/image/cactiva/logo.png';
+import Container from '../../../components/UI/Container';
+import LoginModal from '../LoginModal';
+import Particles from '../Particle';
+import BannerWrapper, { BannerObject } from './bannerSection.style';
 
-import BannerObject1 from "../../../assets/image/cactiva/logo.png";
-import BannerObject2 from "../../../assets/image/saas/banner/bannerObject2.png";
-const BannerSection = ({
-  row,
-  col,
-  title,
-  btnStyle,
-  description,
-  discountText,
-  discountAmount,
-  outlineBtnStyle
-}) => {
-  const ButtonGroup = () => (
-    <Fragment>
-      <Button title="FREE TRAIL" {...btnStyle} />
-      <Button
-        className="outlined"
-        title="EXPLORE MORE"
-        variant="outlined"
-        {...outlineBtnStyle}
-      />
-    </Fragment>
-  );
-  const LoginButtonGroup = () => (
-    <Fragment>
-      <Button className="default" title="LOGIN" {...btnStyle} />
-      <Button
-        title="Forget Password"
-        variant="textButton"
-        {...outlineBtnStyle}
-      />
-    </Fragment>
-  );
-  const SignupButtonGroup = () => (
-    <Fragment>
-      <Button className="default" title="REGISTER" {...btnStyle} />
-    </Fragment>
-  );
-  return (
-    <BannerWrapper id="banner_section">
-      <Particles />
-      <Container>
-        <LoginModal />
-      </Container>
-      <BannerObject>
-        <div className="objectWrapper">
-          <Image src={BannerObject1} alt="BannerObject1" />
-        </div>
-      </BannerObject>
-    </BannerWrapper>
-  );
-};
+const BannerSection = observer(
+  ({
+    row,
+    col,
+    title,
+    btnStyle,
+    description,
+    discountText,
+    discountAmount,
+    outlineBtnStyle,
+    state,
+    handleSignUp,
+  }) => {
+    const ButtonGroup = () => (
+      <Fragment>
+        <Button title="FREE TRAIL" {...btnStyle} />
+        <Button
+          className="outlined"
+          title="EXPLORE MORE"
+          variant="outlined"
+          {...outlineBtnStyle}
+        />
+      </Fragment>
+    );
+    const LoginButtonGroup = () => (
+      <Fragment>
+        <Button className="default" title="LOGIN" {...btnStyle} />
+        <Button
+          title="Forget Password"
+          variant="textButton"
+          {...outlineBtnStyle}
+        />
+      </Fragment>
+    );
+    const SignupButtonGroup = () => (
+      <Fragment>
+        <Button className="default" title="REGISTER" {...btnStyle} />
+      </Fragment>
+    );
+    return (
+      <BannerWrapper id="banner_section">
+        <Particles />
+        <Container>
+          <LoginModal state={state} handleSignUp={handleSignUp} />
+        </Container>
+        <BannerObject>
+          <div className="objectWrapper">
+            <Image src={BannerObject1} alt="BannerObject1" />
+          </div>
+        </BannerObject>
+      </BannerWrapper>
+    );
+  }
+);
 
 BannerSection.propTypes = {
   title: PropTypes.object,
@@ -68,64 +72,64 @@ BannerSection.propTypes = {
   contentStyle: PropTypes.object,
   discountText: PropTypes.object,
   discountAmount: PropTypes.object,
-  outlineBtnStyle: PropTypes.object
+  outlineBtnStyle: PropTypes.object,
 };
 
 BannerSection.defaultProps = {
   row: {
     flexBox: true,
-    flexWrap: "wrap",
-    ml: "-15px",
-    mr: "-15px",
-    alignItems: "center"
+    flexWrap: 'wrap',
+    ml: '-15px',
+    mr: '-15px',
+    alignItems: 'center',
   },
   col: {
-    pr: "15px",
-    pl: "15px",
-    width: [1, "70%", "50%", "45%"]
+    pr: '15px',
+    pl: '15px',
+    width: [1, '70%', '50%', '45%'],
   },
   title: {
-    fontSize: ["22px", "34px", "30px", "55px"],
-    fontWeight: "700",
-    color: "#0f2137",
-    letterSpacing: "-0.025em",
-    mb: ["20px", "25px"],
-    lineHeight: "1.5"
+    fontSize: ['22px', '34px', '30px', '55px'],
+    fontWeight: '700',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: ['20px', '25px'],
+    lineHeight: '1.5',
   },
   description: {
-    fontSize: "16px",
-    color: "#343d48cc",
-    lineHeight: "1.75",
-    mb: "0"
+    fontSize: '16px',
+    color: '#343d48cc',
+    lineHeight: '1.75',
+    mb: '0',
   },
   btnStyle: {
-    minWidth: ["120px", "120px", "120px", "156px"],
-    fontSize: ["13px", "14px"],
-    fontWeight: "500",
-    colors: "primaryWithBg"
+    minWidth: ['120px', '120px', '120px', '156px'],
+    fontSize: ['13px', '14px'],
+    fontWeight: '500',
+    colors: 'primaryWithBg',
   },
   outlineBtnStyle: {
-    minWidth: "156px",
-    fontSize: "14px",
-    fontWeight: "500",
-    color: "#5167db",
-    ml: "18px"
+    minWidth: '156px',
+    fontSize: '14px',
+    fontWeight: '500',
+    color: '#5167db',
+    ml: '18px',
   },
   discountAmount: {
-    fontSize: "14px",
-    color: "#eb4d4b",
+    fontSize: '14px',
+    color: '#eb4d4b',
     mb: 0,
-    as: "span",
-    mr: "0.4em",
-    fontWeight: 700
+    as: 'span',
+    mr: '0.4em',
+    fontWeight: 700,
   },
   discountText: {
-    fontSize: ["13px", "14px"],
-    color: "#0f2137",
+    fontSize: ['13px', '14px'],
+    color: '#0f2137',
     mb: 0,
-    as: "span",
-    fontWeight: 500
-  }
+    as: 'span',
+    fontWeight: 500,
+  },
 };
 
 export default BannerSection;

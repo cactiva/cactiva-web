@@ -1,32 +1,32 @@
-const withPlugins = require("next-compose-plugins");
-const withTM = require("next-transpile-modules");
-const withOptimizedImages = require("next-optimized-images");
-const withFonts = require("next-fonts");
-const withCSS = require("@zeit/next-css");
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules');
+const withOptimizedImages = require('next-optimized-images');
+const withFonts = require('next-fonts');
+const withCSS = require('@zeit/next-css');
 module.exports = withPlugins(
   [
     [
       withTM,
       {
-        transpileModules: ["reusecore", "common"]
-      }
+        transpileModules: ['reusecore', 'common', 'api'],
+      },
     ],
     [
       withOptimizedImages,
       {
         mozjpeg: {
-          quality: 90
+          quality: 90,
         },
         webp: {
-          preset: "default",
-          quality: 90
-        }
-      }
+          preset: 'default',
+          quality: 90,
+        },
+      },
     ],
     withFonts,
-    withCSS
+    withCSS,
   ],
   {
-    distDir: "../../dist/functions/next"
+    distDir: '../../dist/functions/next',
   }
 );
