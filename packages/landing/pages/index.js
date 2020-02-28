@@ -2,12 +2,12 @@ import React, { Fragment } from "react";
 import Head from "next/head";
 import Sticky from "react-stickynode";
 import { ThemeProvider } from "styled-components";
-import { saasTheme } from "common/src/theme/saas";
+import { cactivaTheme } from "common/src/theme/cactiva";
 import { ResetCSS } from "common/src/assets/css/style";
 import {
   GlobalStyle,
   ContentWrapper
-} from "common/src/containers/Cactiva/saas.style";
+} from "common/src/containers/Cactiva/cactiva.style";
 import Navbar from "common/src/containers/Cactiva/Navbar";
 import BannerSection from "common/src/containers/Cactiva/BannerSection";
 import FeatureSection from "common/src/containers/Cactiva/FeatureSection";
@@ -24,11 +24,15 @@ import FaqSection from "common/src/containers/Cactiva/FaqSection";
 
 export default () => {
   return (
-    <ThemeProvider theme={saasTheme}>
+    <ThemeProvider theme={cactivaTheme}>
       <Fragment>
         <Head>
-          <title>Saas | A react next landing page</title>
-          <meta name="Description" content="React next landing page" />
+          <title>Cactiva Website</title>
+          <meta
+            name="viewport"
+            content="width=device-width,minimum-scale=1,initial-scale=1"
+          />
+          <meta name="Description" content="Cactiva company profile" />
           <meta name="theme-color" content="#ec5555" />
           {/* Load google fonts */}
           <link
@@ -46,13 +50,13 @@ export default () => {
           </Sticky>
           <BannerSection />
           <FeatureSection />
-          <VisitorSection />
+          {/* <VisitorSection /> */}
           <ServiceSection />
           <PricingSection />
-          <TestimonialSection />
+          {/* <TestimonialSection /> 
           <PartnerSection />
-          <TimelineSection />
-          <FaqSection />
+          <TimelineSection /> 
+          <FaqSection /> */}
           <TrialSection />
           <Footer />
         </ContentWrapper>

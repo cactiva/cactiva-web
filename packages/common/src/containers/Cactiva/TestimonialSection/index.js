@@ -1,19 +1,19 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
-import Image from 'reusecore/src/elements/Image';
-import { Testimonial } from '../../../data/Saas';
-import Container from '../../../components/UI/Container';
-import GlideCarousel from '../../../components/GlideCarousel';
-import GlideSlide from '../../../components/GlideCarousel/glideSlide';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Button from "reusecore/src/elements/Button";
+import Image from "reusecore/src/elements/Image";
+import { Testimonial } from "../../../data/Cactiva";
+import Container from "../../../components/UI/Container";
+import GlideCarousel from "../../../components/GlideCarousel";
+import GlideSlide from "../../../components/GlideCarousel/glideSlide";
 import TestimonialSectionWrapper, {
   TextWrapper,
   ImageWrapper,
   RoundWrapper,
-  ClientName,
-} from './testimonialSection.style';
+  ClientName
+} from "./testimonialSection.style";
 
 const TestimonialSection = ({
   sectionSubTitle,
@@ -21,13 +21,13 @@ const TestimonialSection = ({
   commentStyle,
   nameStyle,
   btnStyle,
-  designationStyle,
+  designationStyle
 }) => {
   // Glide js options
   const glideOptions = {
-    type: 'carousel',
+    type: "carousel",
     autoplay: 4000,
-    perView: 1,
+    perView: 1
   };
 
   return (
@@ -97,66 +97,66 @@ TestimonialSection.propTypes = {
   btnWrapperStyle: PropTypes.object,
   nameStyle: PropTypes.object,
   commentStyle: PropTypes.object,
-  designationStyle: PropTypes.object,
+  designationStyle: PropTypes.object
 };
 
 // TestimonialSection default style
 TestimonialSection.defaultProps = {
   // sub section default style
   sectionSubTitle: {
-    as: 'span',
-    display: 'block',
-    fontSize: '14px',
-    letterSpacing: '0.15em',
-    fontWeight: '700',
-    color: '#5268db',
-    mb: '20px',
-    ml: 'auto',
-    mr: 'auto',
-    pl: '12px',
-    maxWidth: '954px',
+    as: "span",
+    display: "block",
+    fontSize: "14px",
+    letterSpacing: "0.15em",
+    fontWeight: "700",
+    color: "#5268db",
+    mb: "20px",
+    ml: "auto",
+    mr: "auto",
+    pl: "12px",
+    maxWidth: "954px"
   },
   // client comment style
   commentStyle: {
-    color: '#0f2137',
-    fontWeight: '400',
-    fontSize: ['22px', '22px', '22px', '30px'],
-    lineHeight: '1.72',
-    mb: '47px',
+    color: "#0f2137",
+    fontWeight: "400",
+    fontSize: ["22px", "22px", "22px", "30px"],
+    lineHeight: "1.72",
+    mb: "47px"
   },
   // client name style
   nameStyle: {
-    as: 'h3',
-    color: '#343d48',
-    fontWeight: '500',
-    fontSize: '16px',
-    lineHeight: '30px',
-    mb: 0,
+    as: "h3",
+    color: "#343d48",
+    fontWeight: "500",
+    fontSize: "16px",
+    lineHeight: "30px",
+    mb: 0
   },
   // client designation style
   designationStyle: {
-    as: 'h5',
-    color: 'rgba(52, 61, 72, 0.8)',
-    fontWeight: '400',
-    fontSize: '16px',
-    lineHeight: '30px',
+    as: "h5",
+    color: "rgba(52, 61, 72, 0.8)",
+    fontWeight: "400",
+    fontSize: "16px",
+    lineHeight: "30px",
     mb: 0,
-    ml: ['0', '10px'],
+    ml: ["0", "10px"]
   },
   // glide slider nav controls style
   btnWrapperStyle: {
-    position: 'absolute',
-    bottom: '62px',
-    left: '12px',
+    position: "absolute",
+    bottom: "62px",
+    left: "12px"
   },
   // next / prev btn style
   btnStyle: {
-    minWidth: 'auto',
-    minHeight: 'auto',
-    mr: '13px',
-    fontSize: '16px',
-    color: '#343d484d',
-  },
+    minWidth: "auto",
+    minHeight: "auto",
+    mr: "13px",
+    fontSize: "16px",
+    color: "#343d484d"
+  }
 };
 
 export default TestimonialSection;

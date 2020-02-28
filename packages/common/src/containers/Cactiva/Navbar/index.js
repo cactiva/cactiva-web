@@ -8,7 +8,7 @@ import HamburgMenu from "../../../components/HamburgMenu";
 import Container from "../../../components/UI/Container";
 import { DrawerContext } from "../../../contexts/DrawerContext";
 
-import { MENU_ITEMS } from "../../../data/Saas";
+import { MENU_ITEMS } from "../../../data/Cactiva";
 import ScrollSpyMenu from "../../../components/ScrollSpyMenu";
 
 import LogoImage from "../../../assets/image/cactiva/logo-cactiva.png";
@@ -30,7 +30,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
           <Logo
             href="#"
             logoSrc={LogoImage}
-            title="Agency"
+            title="Cactiva"
             logoStyle={logoStyle}
           />
           <Box {...menuWrapper}>

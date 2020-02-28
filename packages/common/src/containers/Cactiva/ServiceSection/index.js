@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from 'reusecore/src/elements/Box';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import FeatureBlock from '../../../components/FeatureBlock';
-import { Service } from '../../../data/Saas';
-import Container from '../../../components/UI/Container';
-import ServiceSectionWrapper from './service.style';
+import React from "react";
+import PropTypes from "prop-types";
+import Box from "reusecore/src/elements/Box";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import FeatureBlock from "../../../components/FeatureBlock";
+import { Service } from "../../../data/Cactiva";
+import Container from "../../../components/UI/Container";
+import ServiceSectionWrapper from "./service.style";
 
 const ServiceSection = ({
   row,
@@ -18,14 +18,17 @@ const ServiceSection = ({
   featureDescription,
   iconStyle,
   contentStyle,
-  blockWrapperStyle,
+  blockWrapperStyle
 }) => {
   return (
     <ServiceSectionWrapper id="feature_section">
       <Container>
         <Box {...sectionHeader}>
           <Text content="OUR FEATURES" {...sectionSubTitle} />
-          <Heading content="Why you should choose our Saas" {...sectionTitle} />
+          <Heading
+            content="What Featured Service that We Provide"
+            {...sectionTitle}
+          />
         </Box>
         <Box className="row" {...row}>
           {Service.map((feature, index) => (
@@ -57,83 +60,83 @@ ServiceSection.propTypes = {
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
   featureTitle: PropTypes.object,
-  featureDescription: PropTypes.object,
+  featureDescription: PropTypes.object
 };
 
 // ServiceSection default style
 ServiceSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: ['50px', '50px', '50px', '80px'],
+    mb: ["50px", "50px", "50px", "80px"]
   },
   // sub section default style
   sectionSubTitle: {
-    as: 'span',
-    display: 'block',
-    textAlign: 'center',
-    fontSize: '14px',
-    letterSpacing: '0.15em',
-    fontWeight: '700',
-    color: '#5268db',
-    mb: '10px',
+    as: "span",
+    display: "block",
+    textAlign: "center",
+    fontSize: "14px",
+    letterSpacing: "0.15em",
+    fontWeight: "700",
+    color: "#5268db",
+    mb: "10px"
   },
   // section title default style
   sectionTitle: {
-    textAlign: 'center',
-    fontSize: ['20px', '24px'],
-    fontWeight: '500',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
-    mb: '0',
+    textAlign: "center",
+    fontSize: ["20px", "24px"],
+    fontWeight: "500",
+    color: "#0f2137",
+    letterSpacing: "-0.025em",
+    mb: "0"
   },
   // feature row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
+    flexWrap: "wrap"
   },
   // feature col default style
   col: {
-    width: [1, 1 / 2, 1 / 2, 1 / 3],
+    width: [1, 1 / 2, 1 / 2, 1 / 3]
   },
   // feature block wrapper default style
   blockWrapperStyle: {
-    p: ['30px', '20px', '20px', '20px'],
+    p: ["30px", "20px", "20px", "20px"]
   },
   // feature icon default style
   iconStyle: {
-    width: ['70px', '80px'],
-    height: ['70px', '80px'],
-    borderRadius: '50%',
-    bg: '#93d26e',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: ['32px', '36px'],
-    color: '#ffffff',
-    overflow: 'hidden',
-    mb: '30px',
-    borderBottomLeftRadius: '50%',
+    width: ["70px", "80px"],
+    height: ["70px", "80px"],
+    borderRadius: "50%",
+    bg: "#93d26e",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: ["32px", "36px"],
+    color: "#ffffff",
+    overflow: "hidden",
+    mb: "30px",
+    borderBottomLeftRadius: "50%"
   },
   // feature content default style
   contentStyle: {
-    textAlign: 'left',
-    mt: '-5px',
+    textAlign: "left",
+    mt: "-5px"
   },
   // feature title default style
   featureTitle: {
-    fontSize: ['18px', '20px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    lineHeight: '1.5',
-    letterSpacing: '-0.020em',
-    mb: '10px',
+    fontSize: ["18px", "20px"],
+    fontWeight: "400",
+    color: "#0f2137",
+    lineHeight: "1.5",
+    letterSpacing: "-0.020em",
+    mb: "10px"
   },
   // feature description default style
   featureDescription: {
-    fontSize: '15px',
-    lineHeight: '1.75',
-    color: '#343d4ccc',
-  },
+    fontSize: "15px",
+    lineHeight: "1.75",
+    color: "#343d4ccc"
+  }
 };
 
 export default ServiceSection;

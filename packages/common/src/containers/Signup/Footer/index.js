@@ -1,8 +1,17 @@
-import PropTypes from "prop-types";
 import React from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import Box from "reusecore/src/elements/Box";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Logo from "reusecore/src/elements/UI/Logo";
 import Container from "../../../components/UI/Container";
-import Content from "./content";
-import FooterWrapper from "./footer.style";
+import FooterWrapper, { List, ListItem } from "./footer.style";
+
+import LogoImage from "../../../assets/image/saas/logo.png";
+
+import { Footer_Data } from "../../../data/Cactiva";
+import Content from "../../Cactiva/Footer/content";
 
 const Footer = ({
   row,

@@ -1,7 +1,7 @@
-import { appTheme } from './app';
-import { agencyTheme } from './agency';
+import { appTheme } from "./app";
+import { cactivaTheme } from "./cactiva";
 
 export const theme = {
   appTheme,
-  agencyTheme,
+  cactivaTheme
 };

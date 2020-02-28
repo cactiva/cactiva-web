@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import Box from 'reusecore/src/elements/Box';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
-import Container from '../../../components/UI/Container';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import Box from "reusecore/src/elements/Box";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Button from "reusecore/src/elements/Button";
+import Container from "../../../components/UI/Container";
 import {
   Accordion,
   AccordionItem,
@@ -13,14 +13,14 @@ import {
   AccordionBody,
   IconWrapper,
   OpenIcon,
-  CloseIcon,
-} from '../../../components/Accordion';
-import { Icon } from 'react-icons-kit';
-import { plus } from 'react-icons-kit/entypo/plus';
-import { minus } from 'react-icons-kit/entypo/minus';
-import FaqSectionWrapper from './faqSection.style';
+  CloseIcon
+} from "../../../components/Accordion";
+import { Icon } from "react-icons-kit";
+import { plus } from "react-icons-kit/entypo/plus";
+import { minus } from "react-icons-kit/entypo/minus";
+import FaqSectionWrapper from "./faqSection.style";
 
-import { Faq } from '../../../data/Saas';
+import { Faq } from "../../../data/Cactiva";
 
 const FaqSection = ({
   sectionHeader,
@@ -29,7 +29,7 @@ const FaqSection = ({
   titleStyle,
   descriptionStyle,
   buttonWrapper,
-  button,
+  button
 }) => {
   return (
     <FaqSectionWrapper id="faq_section">
@@ -89,69 +89,69 @@ FaqSection.propTypes = {
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
   buttonWrapper: PropTypes.object,
-  button: PropTypes.object,
+  button: PropTypes.object
 };
 
 // FaqSection default style
 FaqSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: '56px',
+    mb: "56px"
   },
   // sub section default style
   sectionSubTitle: {
-    content: 'FREQUENTLY ASKED QUESTIONS',
-    as: 'span',
-    display: 'block',
-    textAlign: 'center',
-    fontSize: '14px',
-    letterSpacing: '0.15em',
-    fontWeight: '700',
-    color: '#5268db',
-    mb: '5px',
+    content: "FREQUENTLY ASKED QUESTIONS",
+    as: "span",
+    display: "block",
+    textAlign: "center",
+    fontSize: "14px",
+    letterSpacing: "0.15em",
+    fontWeight: "700",
+    color: "#5268db",
+    mb: "5px"
   },
   // section title default style
   sectionTitle: {
-    content: 'Want to ask something about us ?',
-    textAlign: 'center',
-    fontSize: ['20px', '24px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
-    mb: '0',
+    content: "Want to ask something about us ?",
+    textAlign: "center",
+    fontSize: ["20px", "24px"],
+    fontWeight: "400",
+    color: "#0f2137",
+    letterSpacing: "-0.025em",
+    mb: "0"
   },
   // accordion title default style
   titleStyle: {
-    fontSize: ['16px', '19px'],
-    fontWeight: '400',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
-    mb: '0',
+    fontSize: ["16px", "19px"],
+    fontWeight: "400",
+    color: "#0f2137",
+    letterSpacing: "-0.025em",
+    mb: "0"
   },
   // accordion description default style
   descriptionStyle: {
-    fontSize: '15px',
-    color: '#5d646d',
-    lineHeight: '1.75',
-    mb: '0',
-    fontWeight: '400',
+    fontSize: "15px",
+    color: "#5d646d",
+    lineHeight: "1.75",
+    mb: "0",
+    fontWeight: "400"
   },
   buttonWrapper: {
     mt: `${11}`,
     flexBox: true,
-    justifyContent: 'center',
+    justifyContent: "center"
   },
   button: {
-    title: 'EXPLORE FORUM',
-    type: 'button',
+    title: "EXPLORE FORUM",
+    type: "button",
     fontSize: `${2}`,
-    fontWeight: '600',
-    borderRadius: '4px',
-    pl: '22px',
-    pr: '22px',
-    colors: 'primary',
-    height: `${4}`,
-  },
+    fontWeight: "600",
+    borderRadius: "4px",
+    pl: "22px",
+    pr: "22px",
+    colors: "primary",
+    height: `${4}`
+  }
 };
 
 export default FaqSection;

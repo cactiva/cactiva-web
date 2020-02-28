@@ -1,23 +1,15 @@
-import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import Box from "reusecore/src/elements/Box";
-import Text from "reusecore/src/elements/Text";
-import Image from "reusecore/src/elements/Image";
-import Heading from "reusecore/src/elements/Heading";
+import "rc-tabs/assets/index.css";
+import React, { Fragment } from "react";
 import Button from "reusecore/src/elements/Button";
-import FeatureBlock from "../../../components/FeatureBlock";
 import Container from "../../../components/UI/Container";
+import LoginModal from "../LoginModal";
 import Particles from "../Particle";
-import BannerWrapper, {
-  DiscountLabel,
-  BannerObject
-} from "./bannerSection.style";
-import ReactPlayer from "react-player";
+import BannerWrapper, { BannerObject } from "./bannerSection.style";
+import Image from "reusecore/src/elements/Image";
 
-import BannerObject1 from "../../../assets/image/saas/banner/bannerObject1.png";
+import BannerObject1 from "../../../assets/image/cactiva/logo.png";
 import BannerObject2 from "../../../assets/image/saas/banner/bannerObject2.png";
-// import VideoPreview from "../../../assets/video/preview.mp4";
-
 const BannerSection = ({
   row,
   col,
@@ -30,59 +22,39 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Buy Now" {...btnStyle} />
+      <Button title="FREE TRAIL" {...btnStyle} />
       <Button
         className="outlined"
-        title="Free Trial"
+        title="EXPLORE MORE"
         variant="outlined"
         {...outlineBtnStyle}
       />
+    </Fragment>
+  );
+  const LoginButtonGroup = () => (
+    <Fragment>
+      <Button className="default" title="LOGIN" {...btnStyle} />
+      <Button
+        title="Forget Password"
+        variant="textButton"
+        {...outlineBtnStyle}
+      />
+    </Fragment>
+  );
+  const SignupButtonGroup = () => (
+    <Fragment>
+      <Button className="default" title="REGISTER" {...btnStyle} />
     </Fragment>
   );
   return (
     <BannerWrapper id="banner_section">
       <Particles />
       <Container>
-        <Box className="row" {...row}>
-          <Box className="col" {...col}>
-            <DiscountLabel>
-              <Text content="Free Trial for 7 days" {...discountAmount} />
-              <Text content="on your first project " {...discountText} />
-            </DiscountLabel>
-            <FeatureBlock
-              title={
-                <Heading
-                  content="Make React Development Easy"
-                  {...title}
-                />
-              }
-              description={
-                <Text
-                  content="We help you to build react app feels easier and faster. 
-                  Increase your productivity with tools that very helpful . "
-                  {...description}
-                />
-              }
-              button={<ButtonGroup />}
-            />
-          </Box>
-        </Box>
+        <LoginModal />
       </Container>
       <BannerObject>
         <div className="objectWrapper">
           <Image src={BannerObject1} alt="BannerObject1" />
-          <div className="dashboardWrapper">
-            {/* <Image src={BannerObject2} alt="BannerObject1" /> */}
-            <ReactPlayer
-              url={"/preview.mp4"}
-              lightWhats our monthly pricing
-              playing
-              loop
-              muted
-              width="100%"
-              height="100%"
-            />
-          </div>
         </div>
       </BannerObject>
     </BannerWrapper>
