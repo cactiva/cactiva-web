@@ -12,7 +12,7 @@ import {
   backgroundRepeat,
   opacity
 } from "styled-system";
-import { cards } from "@packages/theme/customVariant";
+import { cards } from "@libs/theme/customVariant";
 import { base, themed } from "../base";
 
 const CardWrapper = styled("div")(

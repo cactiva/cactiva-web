@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { variant } from "styled-system";
-import { colorStyle } from "@packages/theme/customVariant";
+import { colorStyle } from "@libs/theme/customVariant";
 import { AnimSpinner } from "../Animation";
 import { base } from "../base";
 

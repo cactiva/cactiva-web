@@ -6,8 +6,8 @@ import Button from "@libs/elements/Button";
 import Image from "@libs/elements/Image";
 import BannerObject1 from "@assets/image/cactiva/logo.png";
 import Container from "@packages/components/UI/Container";
-import LoginModal from "../../Signup/LoginModal";
-import Particles from "../../Signup/Particle";
+import LoginModal from "../LoginModal";
+import Particles from "../Particle";
 import SignupWrapper, { SignupObject } from "./signupSection.style";
 
 const SignupSection = observer(
