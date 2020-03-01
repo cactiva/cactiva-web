@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Box from "@libs/elements/Box";
 import Text from "@libs/elements/Text";
@@ -14,9 +14,9 @@ import BannerWrapper, {
 } from "./bannerSection.style";
 import ReactPlayer from "react-player";
 
-import BannerObject1 from "@assets/image/saas/banner/bannerObject1.png";
+import BannerObject1 from "@assets/image/cactiva/logo.png";
 import BannerObject2 from "@assets/image/saas/banner/bannerObject2.png";
-// import VideoPreview from "@assets/video/preview.mp4";
+import VideoPreview from "@assets/video/preview.mp4";
 
 const BannerSection = ({
   row,
@@ -28,6 +28,7 @@ const BannerSection = ({
   discountAmount,
   outlineBtnStyle
 }) => {
+  const [play, setPlay] = useState(false);
   const ButtonGroup = () => (
     <Fragment>
       <Button title="Buy Now" {...btnStyle} />
@@ -39,6 +40,11 @@ const BannerSection = ({
       />
     </Fragment>
   );
+  useEffect(() => {
+    setTimeout(() => {
+      setPlay(true);
+    }, 1000);
+  }, []);
   return (
     <BannerWrapper id="banner_section">
       <Particles />
@@ -69,7 +75,29 @@ const BannerSection = ({
         <div className="objectWrapper">
           <Image src={BannerObject1} alt="BannerObject1" />
           <div className="dashboardWrapper">
-            <Image src={BannerObject2} alt="BannerObject1" />
+            {/* <Image src={BannerObject2} alt="BannerObject1" /> */}
+            <ReactPlayer
+              url={VideoPreview}
+              playing={play}
+              loop={true}
+              light={true}
+              volume={0}
+              muted={true}
+              width={"720px"}
+              height={"480px"}
+              playsinline={true}
+              config={{
+                file: {
+                  attributes: {
+                    autoPlay: true,
+                    muted: true
+                  }
+                }
+              }}
+              onReady={() => setTimeout(console.log("ready"), 100)}
+              onPlay={() => console.log(play)}
+              onStart={() => console.log("start")}
+            />
           </div>
         </div>
       </BannerObject>
