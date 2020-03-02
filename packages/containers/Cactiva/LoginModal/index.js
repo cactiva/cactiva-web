@@ -56,14 +56,14 @@ const LoginModal = observer(
           <Box className="col tabCol" {...col}>
             <Box {...contentWrapper}>
               <Tabs
-                defaultActiveKey="loginForm"
+                defaultActiveKey="registerForm"
                 renderTabBar={() => <ScrollableInkTabBar />}
                 renderTabContent={() => <TabContent />}
               >
                 <TabPane tab="LOGIN" key="loginForm">
-                  <Heading content="Welcome Folk" {...titleStyle} />
+                  <Heading content="Login" {...titleStyle} />
                   <Text
-                    content="Welcome to Mate Family. Please login with your personal account information letter."
+                    content="Please login with your personal account for more information."
                     {...descriptionStyle}
                   />
                   {/* <Button
@@ -91,9 +91,9 @@ const LoginModal = observer(
                   </div>
                 </TabPane>
                 <TabPane tab="REGISTER" key="registerForm">
-                  <Heading content="Welcome Folk" {...titleStyle} />
+                  <Heading content="Join Us Now !" {...titleStyle} />
                   <Text
-                    content="Welcome to Mate Family. Please login with your personal account information letter."
+                    content="Are you ready to create your stunning App. Join us right now and start to create."
                     {...descriptionStyle}
                   />
                   {/* <Button

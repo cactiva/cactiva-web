@@ -26,9 +26,9 @@ const TrialSection = ({
     <Box {...sectionWrapper}>
       <Container>
         <Box {...row}>
-          <Box {...imageArea}>
+          {/* <Box {...imageArea}>
             <Image {...ImageOne} src={VendorLogos} alt="VendorLogos" />
-          </Box>
+          </Box> */}
           <Box {...textArea}>
             <Heading
               {...title}

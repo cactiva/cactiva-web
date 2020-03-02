@@ -38,25 +38,25 @@ export const Faq = [
 export const Features = [
   {
     id: 1,
-    icon: "flaticon-creative",
-    title: "Powerful Features",
+    icon: 'flaticon-flask',
+    title: 'Faster Startup',
     description:
-      "Automate time consuming tasks like organising expenses ,tracking your time and following up with clients "
+      'Optimize your build speed with easy startup. You can start to build one page in the one layout',
   },
   {
     id: 2,
-    icon: "flaticon-briefing",
-    title: "Easy Invoicing",
+    icon: 'flaticon-briefing',
+    title: 'Simpler Builder',
     description:
-      "Want to surprice your clients with professional looking invoices ? Then you are some clicks behind ."
+      'Very Simple and intuitive. So you have to spend less time in paperwork and make an enchanting design in simple ways.',
   },
   {
     id: 3,
-    icon: "flaticon-flask",
-    title: "Easy To Use",
+    icon: 'flaticon-creative',
+    title: 'Increase your productivity',
     description:
-      "Very Simple and intuitive. So you have to spend less time in paperwork and impress your customer with looks"
-  }
+      'All of the features and tools will help you to spend less time in paperwork and increase your work productivity.',
+  },
 ];
 
 export const Footer_Data = [
@@ -69,29 +69,17 @@ export const Footer_Data = [
       },
       {
         url: "#",
-        text: "Customer Support"
-      },
-      {
-        url: "#",
         text: "About Us"
       },
       {
         url: "#",
         text: "Copyright"
-      },
-      {
-        url: "#",
-        text: "Popular Campaign"
       }
     ]
   },
   {
     title: "Our Information",
-    menuItems: [
-      {
-        url: "#",
-        text: "Return Policy"
-      },
+    menuItems: [      
       {
         url: "#",
         text: "Privacy Policy"
@@ -99,24 +87,12 @@ export const Footer_Data = [
       {
         url: "#",
         text: "Terms & Conditions"
-      },
-      {
-        url: "#",
-        text: "Site Map"
-      },
-      {
-        url: "#",
-        text: "Store Hours"
       }
     ]
   },
   {
     title: "My Account",
     menuItems: [
-      {
-        url: "#",
-        text: "Press inquiries"
-      },
       {
         url: "#",
         text: "Social media directories"
@@ -128,10 +104,6 @@ export const Footer_Data = [
       {
         url: "#",
         text: "Permissions"
-      },
-      {
-        url: "#",
-        text: "Speaker requests"
       }
     ]
   },
@@ -149,57 +121,53 @@ export const Footer_Data = [
       {
         url: "#",
         text: "Unwanted software policy"
-      },
-      {
-        url: "#",
-        text: "Responsible supply chain"
       }
     ]
   }
 ];
 
 export const Service = [
-  {
+ {
     id: 1,
-    icon: "flaticon-briefing",
-    title: "App Development",
+    icon: 'flaticon-briefing',
+    title: 'Inteface drag and drop',
     description:
-      "We are specialized at custom Saas Application Development and special features ."
+      'We are specialized at design custom Application Development. Cactiva have special features drag and drop so this can be use by the user who doesnt have any react programming skill.',
   },
   {
     id: 2,
-    icon: "flaticon-trophy",
-    title: "10 Times Award",
+    icon: 'flaticon-trophy',
+    title: 'Easy input CSS style',
     description:
-      "We are globally recognised for our services and won a lot of prices around the world ."
+      'User can use CSS style to design the workspace without coding manualy.We provide design tools to customize CSS style.', 
   },
   {
     id: 3,
-    icon: "flaticon-atom",
-    title: "Cloud Stroage",
+    icon: 'flaticon-atom',
+    title: 'Preview HTML & CSS',
     description:
-      "LiteSpeed Web Server known for its high performance and low resource consumption."
+      'This feature allows you to preview your html files, live. And also to preview your CSS editing.',
   },
   {
     id: 4,
     icon: "flaticon-ruler",
-    title: "Client Satisfaction",
+    title: "React features generator",
     description:
-      "Client Satisfaction is our first priority and We are best at it .Keep In Touch."
+      "We provide simple Generate Functionality such as React features (Components ,Virtual DOM, etc)"
   },
   {
     id: 5,
     icon: "flaticon-creative",
-    title: "UX Planning",
+    title: "Eksport and import workspace",
     description:
-      "We provide the best UI/UX Design by following the latest trends of the market  ."
+      "You can generate your workspace into other kind of types."
   },
   {
     id: 6,
     icon: "flaticon-conversation",
-    title: "Customer Support",
+    title: "Demo and tutorial",
     description:
-      "A Dedicated support team is always ready to provide best support to our customers."
+      "..."
   }
 ];
 
@@ -249,7 +217,7 @@ export const MENU_ITEMS = [
     offset: "70"
   },
   {
-    label: "Service",
+    label: "About Us",
     path: "#service_section",
     offset: "70"
   },
@@ -279,8 +247,8 @@ export const MONTHLY_PRICING_TABLE = [
   {
     freePlan: true,
     name: "Basic Account",
-    description: "For Small teams or group who need to build website ",
-    price: "$0",
+    description: "Free package to build website ",
+    price: "$ 0",
     priceLabel: "Only for first month",
     buttonLabel: "CREATE FREE ACCOUNT",
     url: "#",
@@ -295,18 +263,15 @@ export const MONTHLY_PRICING_TABLE = [
         content: "Blog Tools"
       },
       {
-        content: "eCommerce Store "
-      },
-      {
         content: "30+ Webmaster Tools"
       }
     ]
   },
   {
-    name: "Business Account",
-    description: "For Mediums teams or group who need to build website ",
-    price: "$9.87",
-    priceLabel: "Per month & subscription yearly",
+    name: "Pro Account",
+    description: "For professional one who need to build website ",
+    price: "$ 49",
+    priceLabel: "Per year & subscription yearly",
     buttonLabel: "START FREE TRIAL",
     url: "#",
     listItems: [
@@ -318,34 +283,6 @@ export const MONTHLY_PRICING_TABLE = [
       },
       {
         content: "Blog Tools"
-      },
-      {
-        content: "eCommerce Store "
-      },
-      {
-        content: "30+ Webmaster Tools"
-      }
-    ]
-  },
-  {
-    name: "Premium Account",
-    description: "For Large teams or group who need to build website ",
-    price: "$12.98",
-    priceLabel: "Per month & subscription yearly",
-    buttonLabel: "START FREE TRIAL",
-    url: "#",
-    listItems: [
-      {
-        content: "Drag & Drop Builder"
-      },
-      {
-        content: "1,000s of Templates Ready"
-      },
-      {
-        content: "Blog Tools"
-      },
-      {
-        content: "eCommerce Store "
       },
       {
         content: "30+ Webmaster Tools"

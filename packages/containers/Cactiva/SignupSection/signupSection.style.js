@@ -71,8 +71,9 @@ const SignupObject = styled.div`
     display: none;
   }
   .objectWrapper {
-    opacity: 0.3;
+    
     margin-left: auto;
+    margin-right: 18%;
     position: relative;
     .dashboardWrapper {
       position: absolute;

@@ -9,6 +9,7 @@ import Container from "@packages/components/UI/Container";
 import LoginModal from "../LoginModal";
 import Particles from "../Particle";
 import SignupWrapper, { SignupObject } from "./signupSection.style";
+import BannerObject2 from "@assets/image/header-bg.gif";
 
 const SignupSection = observer(
   ({
@@ -57,7 +58,7 @@ const SignupSection = observer(
         </Container>
         <SignupObject>
           <div className="objectWrapper">
-            <Image src={BannerObject1} alt="BannerObject1" />
+            <Image src={BannerObject2} alt="BannerObject2" />
           </div>
         </SignupObject>
       </SignupWrapper>

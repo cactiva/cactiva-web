@@ -74,6 +74,7 @@ const BannerObject = styled.div`
   .objectWrapper {
     margin-left: auto;
     position: relative;
+    margin-right: 20%;
     .dashboardWrapper {
       position: absolute;
       top: 0;

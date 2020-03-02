@@ -27,8 +27,8 @@ const Content = ({
           title="Hosting"
           logoStyle={logoStyle}
         />
-        <Text content="RedQ.Inc" {...textStyle} />
-        <Text content="+97 0267 5923" {...textStyle} />
+        <Text content="© 2020 Cactiva. " {...textStyle} />
+        <Text content="All rights reserved." {...textStyle} />
       </Box>
       {/* End of footer logo column */}
       <Box {...colTwo}>

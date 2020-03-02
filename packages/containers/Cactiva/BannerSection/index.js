@@ -17,6 +17,8 @@ import ReactPlayer from "react-player";
 import BannerObject1 from "@assets/image/cactiva/logo.png";
 import BannerObject2 from "@assets/image/saas/banner/bannerObject2.png";
 import VideoPreview from "@assets/video/preview.mp4";
+import BannerObject3 from "@assets/image/header-bg.gif";
+// import VideoPreview from "@assets/video/preview.mp4";
 
 const BannerSection = ({
   row,
@@ -73,7 +75,7 @@ const BannerSection = ({
       </Container>
       <BannerObject>
         <div className="objectWrapper">
-          <Image src={BannerObject1} alt="BannerObject1" />
+        <Image src={BannerObject1} alt="BannerObject1" />
           <div className="dashboardWrapper">
             {/* <Image src={BannerObject2} alt="BannerObject1" /> */}
             <ReactPlayer
@@ -98,6 +100,7 @@ const BannerSection = ({
               onPlay={() => console.log(play)}
               onStart={() => console.log("start")}
             />
+            {/* <Image src={BannerObject3} alt="BannerObject3" /> */}
           </div>
         </div>
       </BannerObject>
