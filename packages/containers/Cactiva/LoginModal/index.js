@@ -60,40 +60,10 @@ const LoginModal = observer(
                 renderTabBar={() => <ScrollableInkTabBar />}
                 renderTabContent={() => <TabContent />}
               >
-                <TabPane tab="LOGIN" key="loginForm">
-                  <Heading content="Login" {...titleStyle} />
+               <TabPane tab="REGISTER" key="registerForm">
+                  <Heading content="Join now !" {...titleStyle} />
                   <Text
-                    content="Please login with your personal account for more information."
-                    {...descriptionStyle}
-                  />
-                  {/* <Button
-                  icon={<Image src={GoogleLogo} alt="Google Icon" />}
-                  title="Sign in with Google"
-                  iconPosition="left"
-                  className="google-login__btn"
-                  {...googleButtonStyle}
-                /> */}
-
-                  <Input inputType="email" isMaterial label="Email Address" />
-                  <Input
-                    inputType="password"
-                    isMaterial
-                    label="Password"
-                    passwordShowHide
-                  />
-                  <CheckBox
-                    id="remember"
-                    htmlFor="remember"
-                    labelText="Remember Me"
-                  />
-                  <div>
-                    <LoginButtonGroup />
-                  </div>
-                </TabPane>
-                <TabPane tab="REGISTER" key="registerForm">
-                  <Heading content="Join Us Now !" {...titleStyle} />
-                  <Text
-                    content="Are you ready to create your stunning App. Join us right now and start to create."
+                    content="Signup to Start Donate."
                     {...descriptionStyle}
                   />
                   {/* <Button

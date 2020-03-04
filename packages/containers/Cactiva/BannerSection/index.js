@@ -59,23 +59,25 @@ const BannerSection = ({
             </DiscountLabel>
             <FeatureBlock
               title={
-                <Heading content="Make React Development Easy" {...title} />
+                <Heading content="Finally, A React Visual Editor that really works" {...title} />
+                
               }
               description={
                 <Text
-                  content="We help you to build react app feels easier and faster. 
-                  Increase your productivity with tools that very helpful . "
+                  content="We help you visualize your react app structure, 
+                  manipulate your components, import your library 
+                  and finally increase your productivity."
                   {...description}
                 />
               }
-              button={<ButtonGroup />}
+              // button={<ButtonGroup />}
             />
           </Box>
         </Box>
       </Container>
       <BannerObject>
         <div className="objectWrapper">
-        <Image src={BannerObject1} alt="BannerObject1" />
+        <Image src={BannerObject1} alt="BannerObject" />
           <div className="dashboardWrapper">
             {/* <Image src={BannerObject2} alt="BannerObject1" /> */}
             <ReactPlayer

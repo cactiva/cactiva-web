@@ -32,16 +32,16 @@ const TrialSection = ({
           <Box {...textArea}>
             <Heading
               {...title}
-              content="Start your 7 days free pro trial today!"
+              content="Are you ready to create your stunning React App with us?"
             />
 
             <ButtonGroup className="button_group">
-              <Button title="BUY" {...btnStyle} />
-              <Button
+              <Button title="SIGNUP NOW" {...btnStyle} />
+              {/* <Button
                 title="START FREE TRIAL"
                 variant="textButton"
                 {...outlineBtnStyle}
-              />
+              /> */}
             </ButtonGroup>
           </Box>
         </Box>

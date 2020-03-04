@@ -8,7 +8,6 @@ import {
 import FeatureSection from "@packages/containers/Cactiva/FeatureSection";
 import Footer from "@packages/containers/Cactiva/Footer";
 import Navbar from "@packages/containers/Cactiva/Navbar";
-import PartnerSection from "@packages/containers/Cactiva/PartnerSection";
 import PricingSection from "@packages/containers/Cactiva/PricingSection";
 import ServiceSection from "@packages/containers/Cactiva/ServiceSection";
 import TrialSection from "@packages/containers/Cactiva/TrialSection";
@@ -46,8 +45,7 @@ export default () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <PartnerSection />
-          {/* <FeatureSection />  */}
+          <FeatureSection /> 
           <ServiceSection />
           <PricingSection />
           <TrialSection />

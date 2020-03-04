@@ -24,8 +24,8 @@ const FeatureSection = ({
     <FeatureSectionWrapper id="service_section">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="ABOUT US" {...sectionSubTitle} />
-          <Heading content="Why you should choose Cactiva" {...sectionTitle} />
+          <Text content="OUR FEATURES" {...sectionSubTitle} />
+          <Heading content="What Featured Service that We Provide" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
           {Features.map((feature, index) => (

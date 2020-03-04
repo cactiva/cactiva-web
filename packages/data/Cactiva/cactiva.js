@@ -39,23 +39,30 @@ export const Features = [
   {
     id: 1,
     icon: 'flaticon-flask',
-    title: 'Faster Startup',
+    title: 'Canvas Editor',
     description:
-      'Optimize your build speed with easy startup. You can start to build one page in the one layout',
+      'This editor manage your design pages from inside the editor and also be able to edit the component such drag and drop component, add, edit, delete,move or copy the component',
   },
   {
     id: 2,
     icon: 'flaticon-briefing',
-    title: 'Simpler Builder',
+    title: 'Props Editor',
     description:
-      'Very Simple and intuitive. So you have to spend less time in paperwork and make an enchanting design in simple ways.',
+      'We provide some tools to manage any state or props, so you can use it eficiency.',
   },
   {
     id: 3,
     icon: 'flaticon-creative',
-    title: 'Increase your productivity',
+    title: 'Preview',
     description:
-      'All of the features and tools will help you to spend less time in paperwork and increase your work productivity.',
+      'This feature allows you to preview your html files, live. And also to preview your CSS editing.',
+  },
+  {
+    id: 4,
+    icon: 'flaticon-creative',
+    title: 'Generator',
+    description:
+      'We provide simple Generate Functionality such as React features (Components ,Virtual DOM, etc)',
   },
 ];
 
@@ -99,6 +106,10 @@ export const Footer_Data = [
       },
       {
         url: "#",
+        text: "Images & B-roll"
+      },
+      {
+        url: "#",
         text: "Permissions"
       }
     ]
@@ -113,49 +124,60 @@ export const Footer_Data = [
       {
         url: "#",
         text: "Software principles"
+      },
+      {
+        url: "#",
+        text: "Unwanted software policy"
       }
     ]
   }
 ];
 
-
 export const Service = [
-  {
-     id: 1,
-     icon: 'flaticon-briefing',
-     title: 'Canvas Editor',
-     description:
-       'This editor manage your design pages from inside the editor and also be able to edit the component such drag and drop component, add, edit, delete,move or copy the component',
-     },
-   {
-     id: 2,
-     icon: 'flaticon-atom',
-     title: 'Props Editor',
-     description:
-       'We provide some tools to manage any state or props, so you can use it eficiency.',
+ {
+    id: 1,
+    icon: 'flaticon-briefing',
+    title: 'Canvas Editor',
+    description:
+      'This editor manage your design pages from inside the editor and also be able to edit the component such drag and drop component, add, edit, delete,move or copy the component',
     },
-   {
-     id: 3,
-     icon: 'flaticon-creative',
-     title: 'Preview',
-     description:
-       'This feature allows you to preview your html files, live. And also to preview your CSS editing.',
+  {
+    id: 2,
+    icon: 'flaticon-trophy',
+    title: 'Props Editor',
+    description:
+      'We provide some tools to manage any state or props, so you can use it eficiency.',
    },
-   {
-     id: 4,
-     icon: "flaticon-ruler",
-     title: 'Generator',
-     description:
-       'We provide simple Generate Functionality such as React features (Components ,Virtual DOM, etc)',
-   },
-   {
-     id: 6,
-     icon: "flaticon-conversation",
-     title: "Demo and tutorial",
-     description:
-       "We provide some demo, tips, and tutorial that you can help you to learn cactiva more effective."
-   }
- ];
+  {
+    id: 3,
+    icon: 'flaticon-atom',
+    title: 'Preview',
+    description:
+      'This feature allows you to preview your html files, live. And also to preview your CSS editing.',
+  },
+  {
+    id: 4,
+    icon: "flaticon-ruler",
+    title: 'Generator',
+    description:
+      'We provide simple Generate Functionality such as React features (Components ,Virtual DOM, etc)',
+  },
+  {
+    id: 5,
+    icon: "flaticon-creative",
+    title: "Eksport and import workspace",
+    description:
+      "You can generate your workspace into other kind of types."
+  },
+  {
+    id: 6,
+    icon: "flaticon-conversation",
+    title: "Demo and tutorial",
+    description:
+      "..."
+  }
+];
+
 export const Timeline = [
   {
     title: "Wireframing for project",
@@ -203,7 +225,7 @@ export const MENU_ITEMS = [
   },
   {
     label: "About Us",
-    path: "#partner_section",
+    path: "#service_section",
     offset: "70"
   },
   {
@@ -242,13 +264,13 @@ export const MONTHLY_PRICING_TABLE = [
         content: "Drag & Drop Builder"
       },
       {
-        content: "Props Editor"
+        content: "1,000s of Templates Ready"
       },
       {
         content: "Blog Tools"
       },
       {
-        content: "Generator project"
+        content: "30+ Webmaster Tools"
       }
     ]
   },
@@ -264,13 +286,13 @@ export const MONTHLY_PRICING_TABLE = [
         content: "Drag & Drop Builder"
       },
       {
-        content: "Props Editor"
+        content: "1,000s of Templates Ready"
       },
       {
         content: "Blog Tools"
       },
       {
-        content: "Generator project"
+        content: "30+ Webmaster Tools"
       }
     ]
   }
@@ -290,13 +312,16 @@ export const YEARLY_PRICING_TABLE = [
         content: "Drag & Drop Builder"
       },
       {
-        content: "Props Editor"
+        content: "1,000s of Templates Ready"
       },
       {
         content: "Blog Tools"
       },
       {
-        content: "Generator project"
+        content: "eCommerce Store "
+      },
+      {
+        content: "30+ Webmaster Tools"
       }
     ]
   },
@@ -309,16 +334,19 @@ export const YEARLY_PRICING_TABLE = [
     url: "#",
     listItems: [
       {
-        content: "Drag & Drop Builder"
+        content: "Unlimited secure storage"
       },
       {
-        content: "Props Editor"
+        content: "2,000s of Templates Ready"
       },
       {
         content: "Blog Tools"
       },
       {
-        content: "Generator project"
+        content: "24/7 phone support"
+      },
+      {
+        content: "50+ Webmaster Tools"
       }
     ]
   },

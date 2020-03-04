@@ -30,19 +30,21 @@ const PartnerSection = ({
           <Box {...col} {...textArea}>
             <Heading
               {...title}
-              content="Meet our business partner who work behind the scene"
+              content="Our Background"
             />
             <Text
               {...description}
-              content="You can trust us for any kind of services and some of the world class companies have also trusted us.So have faith and keep in touch with us ."
+              content="React is a flexible and efficient front end javascript library for building UI and one of the most popular javascript framework these day. But not everyone can use react, because we know that react comes with a step learning curve and also learning react needs good programming skill.
+
+              Cactiva comes and offers features that help lay users who do not have react skill but have a desire to develop react applications.."
             />
-            <Box>
+            {/* <Box>
               <Link href="#">
                 <a>
                   <Button {...button} title="LEARN MORE" />
                 </a>
               </Link>
-            </Box>
+            </Box> */}
           </Box>
         </Box>
       </Container>
