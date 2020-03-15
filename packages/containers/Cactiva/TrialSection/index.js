@@ -36,7 +36,7 @@ const TrialSection = ({
             />
 
             <ButtonGroup className="button_group">
-              <Button title="SIGNUP NOW" {...btnStyle} />
+              <Button title="JOIN US NOW" {...btnStyle} />
               {/* <Button
                 title="START FREE TRIAL"
                 variant="textButton"

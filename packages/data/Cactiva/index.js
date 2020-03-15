@@ -123,37 +123,30 @@ export const Service = [
   {
      id: 1,
      icon: 'flaticon-briefing',
-     title: 'Canvas Editor',
+     title: 'Single Source of Truth',
      description:
-       'This editor manage your design pages from inside the editor and also be able to edit the component such drag and drop component, add, edit, delete,move or copy the component',
+       'A decent app not only needs a good design but also a working code, so we rely on the single source of truth which is based on the structure of code itself thus the end result will perform and display exactly as the way you intended them to be, minimizing bugs and becoming more productive.',
      },
    {
      id: 2,
      icon: 'flaticon-atom',
-     title: 'Props Editor',
+     title: 'Synced edit and preview',
      description:
-       'We provide some tools to manage any state or props, so you can use it eficiency.',
+       'This is our major feature, with synched edit you can either edit directly from the source code or from the visual preview which we provide in the IDE. Here you can highlight which line of code that corresponds to a certain preview and vice versa. Any change you make will be displayed directly in real time so the app’s design and the code will always be in sync. ',
     },
    {
      id: 3,
      icon: 'flaticon-creative',
-     title: 'Preview',
+     title: 'No unnecessary Assumptions and fancy file extension',
      description:
-       'This feature allows you to preview your html files, live. And also to preview your CSS editing.',
+       'Feel free to decide any structure of your code because we don’t make our own assumption in any of your react projects. Everything will stay the same as the way you start the project so you can do the editing freely and more confidently. ',
    },
    {
      id: 4,
      icon: "flaticon-ruler",
-     title: 'Generator',
+     title: 'Supporting various react project and operating system',
      description:
-       'We provide simple Generate Functionality such as React features (Components ,Virtual DOM, etc)',
-   },
-   {
-     id: 6,
-     icon: "flaticon-conversation",
-     title: "Demo and tutorial",
-     description:
-       "We provide some demo, tips, and tutorial that you can help you to learn cactiva more effective."
+       'Cactiva provides you with various react project editors which accommodates a lot of needs such as CRA, React Native, NextJS etc. We also have a broader range of use in various Operating Systems such as Windows, Linux and OSX. ',
    }
  ];
 export const Timeline = [

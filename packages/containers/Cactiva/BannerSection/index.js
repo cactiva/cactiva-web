@@ -59,14 +59,12 @@ const BannerSection = ({
             </DiscountLabel>
             <FeatureBlock
               title={
-                <Heading content="Finally, A React Visual Editor that really works" {...title} />
+                <Heading content="Edit react app with confidence" {...title} />
                 
               }
               description={
                 <Text
-                  content="We help you visualize your react app structure, 
-                  manipulate your components, import your library 
-                  and finally increase your productivity."
+                  content="Here we assist you in building a react app in a simpler and more efficient way. We provide React editor tools that match according to your needs."
                   {...description}
                 />
               }

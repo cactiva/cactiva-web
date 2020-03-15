@@ -96,7 +96,7 @@ ServiceSection.defaultProps = {
   },
   // feature col default style
   col: {
-    width: [1, 1 / 2, 1 / 2, 1 / 3]
+    width: [1, 1 / 2, 1 / 2]
   },
   // feature block wrapper default style
   blockWrapperStyle: {
